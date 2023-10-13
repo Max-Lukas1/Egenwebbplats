@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(10, 75, 19); 
+    background-color: rgb(17, 157, 212); 
 }
 p{
     font-size: 14px;
@@ -8,7 +8,7 @@ p{
 
 /*meny*/
 header{
-    background-color: rgb(59, 187, 76);
+    background-color: rgb(95,99,104);
     color: rgb(255, 255, 255);
     padding: 10px 0;
 }
@@ -26,3 +26,113 @@ nav ul li a {
 text-decoration: none;
 color: rgb(0, 0, 0);
 }
+
+/*buttons*/
+.Hem{
+    background-color: rgb(199, 0, 0); 
+    color: white;
+    border:none;
+    height: 36px;
+    width: 105px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px ;
+    transition: opacity 0.15s;
+   
+   }
+  
+  .Hem:hover{
+  opacity: 0.8;
+  }
+  
+  .Hem:active{
+  opacity: 0.5;
+  }
+  
+   .Om{
+     background-color: white;
+     border: rgb(41, 118, 215);
+     border-style: solid;
+     border-width:1px ;
+     color:rgb (41, 118, 215);
+     height: 36px;
+     width: 62px;
+     border-radius: 4px;
+     cursor: pointer;
+     margin-right: 8px;
+     transition: background-color 0.15s,
+     color 0.15s;
+     
+  
+  
+  
+  
+  
+  
+   }
+  
+   .Om:hover {
+     background-color:rgb(41, 118, 215); 
+     color: white;
+   }
+  
+   .Om:active{
+     opacity: 0.7;
+   }
+  
+  
+  
+   .Kontakt{
+     background-color: rgb(2, 158, 255);
+     border:none;
+     color: white;
+     height: 36px;
+     width: 74px;
+     border-radius: 18px;
+     font-size: 15px;
+     cursor: pointer;
+     font-weight: bold;
+     transition: box-shadow 0.15s;
+     
+  
+  
+  
+   }
+
+   .Kontakt:hover{
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+   }
+   /*Vill att mina bilder ska vara en specifik width*/
+    img{
+        width: 40em;
+    }
+    /*Använde klass-selektor för att just dena imagen ska vara mindre. Användes i <img> elementet i om-oss.html*/
+    .boll{
+        width: 20em;
+    }
+   
+    /* Vill att min tabell ska ha en border och justera text och färger. I Kontakt.html*/
+    table, th, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+        color: blueviolet;
+        font-size: 20px;
+        width: 500px;
+       
+    }
+
+        
+
+    
+    /*Vill få att cell infon ska vara centrerat*/
+    td{
+        text-align: center;
+    }
+    
+    tr:nth-child(odd){
+        background-color: rgb(201, 118, 132);
+    }
+    tr:nth-child(even){
+        background-color: rgb(158, 102, 209);
+    }
+  
