@@ -5,18 +5,26 @@ p{
     font-size: 14px;
     font-family: Arial;
 }
+.wrapper{
+height: 97vh;
+
+}
+footer{
+
+}
 
 /*meny*/
 header{
-    background-color: rgb(95,99,104);
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
+    background-color: rgb(14, 53, 100);
 }
 
-nav ul{
+nav > ul{
     list-style: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80px;
 }
 nav ul li{
     display: inline ;
@@ -27,7 +35,14 @@ text-decoration: none;
 color: rgb(0, 0, 0);
 }
 
-/*buttons*/
+a:hover{
+    opacity: 0.8;
+}
+a:active{
+    opacity: 0.5;
+}
+
+/*hem knapp för meny*/
 .Hem{
     background-color: rgb(199, 0, 0); 
     color: white;
@@ -40,14 +55,6 @@ color: rgb(0, 0, 0);
     transition: opacity 0.15s;
    
    }
-  
-  .Hem:hover{
-  opacity: 0.8;
-  }
-  
-  .Hem:active{
-  opacity: 0.5;
-  }
   
    .Om{
      background-color: white;
@@ -63,21 +70,13 @@ color: rgb(0, 0, 0);
      transition: background-color 0.15s,
      color 0.15s;
      
+     
   
   
   
   
   
   
-   }
-  
-   .Om:hover {
-     background-color:rgb(41, 118, 215); 
-     color: white;
-   }
-  
-   .Om:active{
-     opacity: 0.7;
    }
   
   
@@ -93,6 +92,7 @@ color: rgb(0, 0, 0);
      cursor: pointer;
      font-weight: bold;
      transition: box-shadow 0.15s;
+     
      
   
   
@@ -121,12 +121,14 @@ color: rgb(0, 0, 0);
        
     }
 
+
         
 
     
     /*Vill få att cell infon ska vara centrerat*/
     td{
         text-align: center;
+        
     }
     
     tr:nth-child(odd){
@@ -136,3 +138,4 @@ color: rgb(0, 0, 0);
         background-color: rgb(158, 102, 209);
     }
   
+    
