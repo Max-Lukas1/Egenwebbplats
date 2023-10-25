@@ -1,43 +1,42 @@
+/*besttämer backgrunds färgen på hela sidan*/
 body{
     background-color: rgb(17, 157, 212); 
 }
-p{
-    font-size: 14px;
-    font-family: Arial;
-}
+
+/*gjort att höjden är 97hv för att ta bort skrollen på höger sidan*/
 .wrapper{
 height: 97vh;
-
 }
+/*gör att footern får utstikande ferger och en ny höjd*/
 footer{
-
+background-color: rgb(14, 53, 100);
+color: rgba(248, 248, 248, 0.74);
+height: 30px;
 }
 
-/*meny*/
+/*meny backgrund färg*/
 header{
     background-color: rgb(14, 53, 100);
 }
-
+/*gör att knapparna är på rätt plats*/
 nav > ul{
     list-style: none;
     padding: 0px;
-    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 80px;
 }
+/*gör att knapparna har en margin frång headern*/
 nav ul li{
     display: inline ;
     margin: 20px;
 }
-nav ul li a {
-text-decoration: none;
-color: rgb(0, 0, 0);
-}
 
+/*gör att meny knapparna blir mindre synliga när man håller på dem*/
 a:hover{
     opacity: 0.8;
 }
+/*gör att meny knapparna blir ännu mindre synlig när man trycker på dem*/
 a:active{
     opacity: 0.5;
 }
@@ -55,7 +54,7 @@ a:active{
     transition: opacity 0.15s;
    
    }
-  
+  /*om oss knappen för menyn*/
    .Om{
      background-color: white;
      border: rgb(41, 118, 215);
@@ -68,19 +67,11 @@ a:active{
      cursor: pointer;
      margin-right: 8px;
      transition: background-color 0.15s,
-     color 0.15s;
-     
-     
-  
-  
-  
-  
-  
-  
+     color 0.15s; 
    }
   
   
-  
+  /*kontakt knappen för menyn*/
    .Kontakt{
      background-color: rgb(2, 158, 255);
      border:none;
@@ -92,13 +83,8 @@ a:active{
      cursor: pointer;
      font-weight: bold;
      transition: box-shadow 0.15s;
-     
-     
-  
-  
-  
    }
-
+   /* gör att kontakt knappen får skugga om man håller på den*/
    .Kontakt:hover{
      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
    }
@@ -130,10 +116,11 @@ a:active{
         text-align: center;
         
     }
-    
+    /*gör att udda rader i tabelen är en viss färg som gör zebra stripingen*/
     tr:nth-child(odd){
         background-color: rgb(201, 118, 132);
     }
+    /*gör att jämna rader i tabelen är en viss färg som gör zebra stripingen*/
     tr:nth-child(even){
         background-color: rgb(158, 102, 209);
     }
